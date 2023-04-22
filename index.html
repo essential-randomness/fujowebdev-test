@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/exd6spk.css" />
     <style>
       body {
-        background-color: #f7eedf;
         --body-width: 750px;
+        --fujo-cream: #f7eedf;
         --fujo-purple: #c29fc9;
         --fujo-red: #ff7976;
         --terminal-dark: #464258;
+        background-color: var(--fujo-cream);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,6 +33,7 @@
       }
       main {
         max-width: var(--body-width);
+        margin-bottom: 50px;
       }
       h1 {
         font-family: "freude", sans-serif;
@@ -40,6 +42,7 @@
         color: var(--fujo-red);
         font-size: 2.5em;
         -webkit-text-stroke: 1px var(--terminal-dark);
+        text-align: center;
       }
       footer {
         position: fixed;
@@ -48,6 +51,7 @@
         right: 0;
         padding: 10px 15px;
         text-align: center;
+        background-color: var(--fujo-cream);
       }
       .logo {
         max-width: 80%;
