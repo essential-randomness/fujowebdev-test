@@ -13,6 +13,9 @@
     <meta name="theme-color" content="#fafafa" />
     <link rel="stylesheet" href="https://use.typekit.net/exd6spk.css" />
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
         --body-width: 750px;
         --fujo-cream: #f7eedf;
@@ -53,9 +56,10 @@
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 10px 15px;
+        padding: 3px 10px 5px 10px;
         text-align: center;
         background-color: var(--fujo-cream);
+        border-top: 2px dotted var(--fujo-purple);
       }
       .logo {
         max-width: 80%;
@@ -87,6 +91,7 @@
         font-weight: bold;
         text-decoration: none;
         color: #317163;
+        margin-block: 0.6em;
       }
       .call-to-action:hover {
         cursor: pointer;
