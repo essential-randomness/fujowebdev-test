@@ -16,6 +16,7 @@
       body {
         background-color: #f7eedf;
         --body-width: 750px;
+        --fujo-purple: #c29fc9;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,6 +26,7 @@
       }
       header {
         max-width: var(--body-width);
+        margin-bottom: 35px;
       }
       main {
         max-width: var(--body-width);
@@ -42,16 +44,30 @@
         padding: 10px 15px;
         text-align: center;
       }
+      .logo {
+        max-width: 80%;
+        margin: 0 auto;
+      }
       img {
         max-width: 100%;
         display: block;
+      }
+      .background {
+        background-color: var(--fujo-purple);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        z-index: -1;
       }
     </style>
   </head>
 
   <body>
+    <div class="background"></div>
     <header>
-      <img src="./bobatan-logo.png" alt="" />
+      <img class="logo" src="./bobatan-logo.png" alt="" />
     </header>
     <main>
       <img src="./roster-with-names.png" />
