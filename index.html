@@ -11,9 +11,36 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <meta name="theme-color" content="#fafafa" />
+    <link rel="stylesheet" href="https://use.typekit.net/exd6spk.css" />
     <style>
       body {
-        background-color: red;
+        background-color: #f7eedf;
+        --body-width: 750ch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "nunito", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      header {
+        max-width: var(--body-width);
+      }
+      main {
+        max-width: var(--body-width);
+      }
+      h1 {
+        font-family: "freude", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 15px;
+        text-align: center;
       }
       img {
         max-width: 100%;
@@ -23,13 +50,26 @@
   </head>
 
   <body>
-    <p>
+    <header>
+      <img src="./bobatan-logo.png" alt="" />
+    </header>
+    <main>
       <img src="./roster-with-names.png" />
-      Welcome to FujoGuide.
+      <h1>The project</h1>
+      <p>
+        The Fujoshi Guide to Web Development is a series of zines/books
+        featuring anthropomorphized versions of programming languages and
+        concepts (aka gijinka), each one engineered from the ground up to cater
+        to transformational fandom (that is, people who create fanfictions,
+        fanarts, meta, and much more), and their sensibilities and interests.
+      </p>
       <a
         href="https://www.kickstarter.com/projects/essential-randomness/the-fujoshi-guide-to-web-development"
         >Please back us on Kickstarter</a
       >.
-    </p>
+    </main>
+    <footer>
+      ©️ 2023 —The Fujoshi Guide to Web Development — Funded thanks to you
+    </footer>
   </body>
 </html>
