@@ -21,6 +21,7 @@
         --fujo-cream: #f7eedf;
         --fujo-purple: #c29fc9;
         --fujo-red: #ff7976;
+        --fujo-light-blue: #bbf7dd;
         --terminal-dark: #464258;
         --kickstarter-green: #05ce78;
         background-color: var(--fujo-cream);
@@ -47,6 +48,15 @@
         font-weight: 400;
         font-style: normal;
         color: var(--fujo-red);
+        font-size: 2.5em;
+        -webkit-text-stroke: 1px var(--terminal-dark);
+        text-align: center;
+      }
+      h2 {
+        font-family: "freude", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: var(--fujo-light-blue);
         font-size: 2.5em;
         -webkit-text-stroke: 1px var(--terminal-dark);
         text-align: center;
@@ -153,6 +163,22 @@
         >Back us on
         <img src="./kickstarter-logo-full.png" alt="Kickstarter logo"
       /></a>
+      <h2>Keep in touch</h2>
+      <p>
+        Our Kickstarter is ongoing, but if you want even more FujoGuide and
+        don't want to back us (mean), you can keep in touch via email!
+      </p>
+      <form
+        action="
+    https://buttondown.email/api/emails/embed-subscribe/fujoguide
+  "
+        method="post"
+        target="popupwindow"
+      >
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="bobatan@fujoweb.dev" />
+        <input type="submit" value="Subscribe" />
+      </form>
     </main>
     <footer>
       ©️ 2023 —The Fujoshi Guide to Web Development — Funded thanks to you
